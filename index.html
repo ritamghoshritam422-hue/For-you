@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 🌸</title>
+  <link rel="stylesheet" href="styke.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop src="song.mp3"></audio>
+
+  <!-- Canvas background -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Top Controls -->
+  <div class="controls">
+    <button id="music-btn" class="icon-btn">🎵 Play Music</button>
+    <button id="note-btn" class="icon-btn">📜 Note</button>
+  </div>
+
+  <!-- Hint Text -->
+  <div class="hint">Tap anywhere on the screen to bloom more flowers ✨</div>
+
+  <!-- Note Modal Overlay -->
+  <div id="note-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <h2>Note</h2>
+      <div class="divider"></div>
+      <p contenteditable="true" id="note-text">
+        My kuchupuchu,<br><br>
+        Teri kami tujhse hi poori hogi "Main kisi or ka kya karunga".<br><br>
+        yours Mota ❤️
+      </p>
+      <div class="sub-text">click text to edit message</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
